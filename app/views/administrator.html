@@ -1,0 +1,23 @@
+<!--highchart id="chart1" config="highchartsNG"></highchart-->
+
+<table class="table">
+  <thead>
+  	<tr>
+  		<th>User Name</th>
+  		<th>Email Address</th>
+  		<th>Remove</th>
+  	</tr>
+  </thead>
+  <tbody>
+  	<tr ng-repeat="user in allUsers">
+  		<th>{{user.username}}</th>
+  		<th>{{user.email}}</th>
+  		<th>
+  			<button class="btn btn-mini btn-danger" 
+		      ng-click="removeUser(user.$id)">
+		      <span class="glyphicon glyphicon-trash" style="vertical-align:middle"></span>
+		    </button>
+		</th>
+  	</tr>	
+  </tbody>
+</table>

@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <div ng-repeat="message in messages">{{message.user}} : {{message.message}}
+    <button class="btn btn-mini btn-danger" 
+      ng-click="removeMessage(message.$id)">
+      <span class="glyphicon glyphicon-trash" style="vertical-align:middle"></span>
+    </button>
+  </div>  
+</div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <input type="text" class="form-control" ng-model="user" placeholder="Username"/>
+  </div>
+  <div class="col-lg-5">
+    <input type="text" class="form-control" ng-model="messageText" placeholder="Message"/>
+  </div>
+  <div class="col-lg-2">
+    <button class="btn btn-default" type="button" ng-click="addMessage(user, messageText)">Add message</button>
+  </div>
+</div>

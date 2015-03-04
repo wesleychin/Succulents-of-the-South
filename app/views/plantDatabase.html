@@ -1,0 +1,40 @@
+<div class="col-lg-offset-2 col-lg-8">
+	<div class="panel">
+		<div class="panel-heading">
+			<center><h1>Add a plant</h1></center>	
+		</div>
+		<form name="form" ng-submit="addPlant(genus, gps);">
+			<div class="form-group">
+				<label for="genus" class="control-label">Genus</label>
+				<input type="text" ng-model="genus" name="genus" id="genus" placeholder="Genus">
+			</div>
+			<div class="form-group">
+				<label for="species" class="control-label">Species</label>
+				<input type="text" ng-model="species" name="species" id="species" placeholder="Species" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="description" class="control-label">Description</label>
+				<textarea ng-model="description" name="description" id="description" placeholder="Description" class="form-control" rows="3"></textarea>
+			</div> 
+			<div class="fileinput fileinput-new" data-provides="fileinput">
+				<div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+					<img data-src="holder.js/100%x100%" alt="...">
+				</div>
+				<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+				<div>
+					<span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+					<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+				</div>
+			</div>
+			<br />
+			<input type="checkbox" ng-model="displayGPS"/> Got GPS co-ordinates?
+			<div class="form-group" ng-show="displayGPS">
+				<label for="longitude" class="control-label">Longitude</label>
+				<input type="text" ng-model="longitude" name="longitude" id="longitude" placeholder="Longitude" class="form-control">
+				<label for="latitude" class="control-label">Latitude</label>
+				<input type="text" ng-model="latitude" name="latitude" id="latitude" placeholder="Latitude" class="form-control">
+			</div>
+			<center><input type="submit" value="Add" class="btn btn-primary"></center>
+		</form>
+	</div>
+</div>
