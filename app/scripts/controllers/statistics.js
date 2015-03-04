@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('suculentsOfTheSouthApp')
+angular.module('succulentsOfTheSouthApp')
   .controller('StatisticsCtrl', function ($scope, $firebase) {
     var firebaseURL = new Firebase("https://boiling-heat-2151.firebaseio.com/messages");
     var sync = $firebase(firebaseURL);

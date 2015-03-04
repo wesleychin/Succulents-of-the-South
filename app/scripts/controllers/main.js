@@ -1,5 +1,5 @@
 'use strict';
 
-angular.module('suculentsOfTheSouthApp')
+angular.module('succulentsOfTheSouthApp')
   .controller('MainCtrl', function ($scope, $firebase) {
 });

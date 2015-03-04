@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('suculentsOfTheSouthApp', [
+  .module('succulentsOfTheSouthApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

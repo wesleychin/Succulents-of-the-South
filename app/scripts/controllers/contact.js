@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('suculentsOfTheSouthApp')
+angular.module('succulentsOfTheSouthApp')
   .controller('ContactCtrl', function ($scope) {
 
   });

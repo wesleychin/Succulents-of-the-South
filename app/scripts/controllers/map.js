@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('suculentsOfTheSouthApp')
+angular.module('succulentsOfTheSouthApp')
   .controller('MapCtrl', function ($scope) {
   	$scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
   });

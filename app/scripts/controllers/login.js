@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('suculentsOfTheSouthApp')
+angular.module('succulentsOfTheSouthApp')
   .controller('LoginCtrl', function ($scope, $location) {
   	$scope.login = function(email, password) {
   		console.log(email, password);
